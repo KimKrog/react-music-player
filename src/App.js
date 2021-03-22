@@ -4,7 +4,7 @@ import Song from "./components/Song";
 import Library from "./components/Library";
 import Nav from "./components/Nav";
 
-import data from "./util";
+import data from "./data";
 
 import "./styles/app.scss";
 
@@ -38,6 +38,9 @@ function App() {
         currentSong={currentSong}
         songInfo={songInfo}
         setSongInfo={setSongInfo}
+        songs={songs}
+        setCurrentSong={setCurrentSong}
+        setSongs={setSongs}
       />
       <Library
         libraryStatus={libraryStatus}
